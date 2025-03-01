@@ -1,0 +1,49 @@
+.user {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.user li {
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  animation : khanh 0.6s  infinite ;
+}
+
+
+.user img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-card li:hover {
+  transform: scale(1.1)
+}
+.product-card li{
+  transition : transform 1s
+}
+
+@keyframes khanh{
+  0%{
+    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0.7);
+  }
+  50%{
+    box-shadow: 0 0 0 10px rgba(0,0,255);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(250, 229, 113, 0);
+  }
+}
+.Examples-card img{
+  width: 200px; /* Đảm bảo ảnh có cùng kích thước */
+  height: 200px;
+  object-fit: cover; /* Cắt ảnh để luôn vừa khung */
+  border-radius: 10px; /* Làm ảnh tròn góc */
+
+} 
